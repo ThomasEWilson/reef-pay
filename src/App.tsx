@@ -3,7 +3,6 @@ import Menu from "./components/menu/Menu";
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
 import { useState } from "react";
 
 function App() {
