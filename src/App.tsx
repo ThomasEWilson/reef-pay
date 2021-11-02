@@ -1,10 +1,16 @@
+import Topbar from './components/topbar/Topbar';
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Menu from "./components/menu/Menu";
+import { useState } from "react";
 
 function App() {
+  const [menuOpen,setMenuOpen] = useState(true)
   return (
     <div className="App">
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
