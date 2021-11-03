@@ -1,31 +1,26 @@
-import Topbar from './components/topbar/Topbar';
+// import Topbar from './components/topbar/Topbar';
+import "antd/dist/antd.css";
 import Menu from "./components/menu/Menu";
+import MerchTable from "./components/merchTable/MerchTable";
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { useState } from "react";
 
+
 function App() {
-  const [menuOpen,setMenuOpen] = useState(true)
+  const [menuOpen,setMenuOpen] = useState(false)
   return (
     <div className="App">
-      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> */}
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className= "Table">
+      <MerchTable />
+      </div>
+    
     </div>
+      
   );
 }
 
