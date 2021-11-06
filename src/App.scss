@@ -1,7 +1,11 @@
 .App {
-  text-align: center;
-
+  /* text-align: center; */
+  display: flex;
+  .flex-container {
+    width: calc(100% - 150px);
+  }
 }
+
 
 .App-header {
   background-color: #282c34;
