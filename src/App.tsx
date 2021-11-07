@@ -3,14 +3,17 @@ import "antd/dist/antd.css";
 import "./App.scss";
 import { Outlet } from "react-router-dom";
 
-import Menu from "./components/menu/Menu";
+import SideBar from "./components/sidebar/sidebar";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [isSidebarOpenParam, setSidebarOpenParam] = useState(true);
+
   return (
     <div className="App">
-      {/* <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/> */}
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <SideBar
+        isSidebarOpen={isSidebarOpenParam}
+        setSidebarOpen={setSidebarOpenParam}
+      />
 
       <div className="col flex-container">
         <Outlet />
