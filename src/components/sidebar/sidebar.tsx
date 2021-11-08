@@ -5,14 +5,14 @@ const SideBar = ({ isSidebarOpen, setSidebarOpen }) => {
   const sideBarMenuLis = [
     {
       className: "sideBarMenuLis",
-      href: "/registration",
-      text: "Registration",
+      href: "/",
+      text: "Dashboard",
       key: 0
     },
     {
       className: "sideBarMenuLis",
-      href: "/",
-      text: "Home - Send a Payment",
+      href: "/registration-page",
+      text: "Registration",
       key: 1
     },
     {
@@ -26,6 +26,12 @@ const SideBar = ({ isSidebarOpen, setSidebarOpen }) => {
       href: "/store-settings",
       text: "Store Settings",
       key: 3
+    },
+    {
+      className: "sideBarMenuLis",
+      href: "/login-page",
+      text: "Login",
+      key: 4
     }
   ];
 

@@ -6,6 +6,9 @@ enum Status {
   Active = "Active",
   Inactive = "Inactive"
 }
+
+// if (noApiKey Yet)
+// page displays "You must connect a wallet before creating an API Key"
 const dataSource = [
   {
     key: "1",

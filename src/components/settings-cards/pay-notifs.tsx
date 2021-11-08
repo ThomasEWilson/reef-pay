@@ -6,6 +6,8 @@ const PayNotifs = () => {
     <Card title="Instant Payment Notifications">
       {/* <span> Secret Key </span> */}
       <Input />
+      <br />
+      <br />
       <Button type="primary"> Generate </Button>
       {/* Recurring Notifications */}
     </Card>

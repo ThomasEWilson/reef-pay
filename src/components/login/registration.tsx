@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import { PageHeader, Form, Input, Button, Checkbox } from "antd";
 
-import { useDataChanger } from "../lib/useDataChanger";
+import { useDataChanger } from "../../lib/useDataChanger";
 
 interface FormData {
   username: string;
