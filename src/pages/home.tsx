@@ -5,10 +5,10 @@ import React from "react";
 // import "@reef-defi/react-lib/dist/index.css";
 // const { Card, Button } = Components;
 
-const PaymentsConsole = () => {
+const Home = () => {
   return (
     <PageHeader
-      title="Payments Console"
+      title="Home"
       className="site-page-header"
       subTitle="Your personal Reef adobe"
     ></PageHeader>
@@ -17,4 +17,4 @@ const PaymentsConsole = () => {
   );
 };
 
-export default PaymentsConsole;
+export default Home;

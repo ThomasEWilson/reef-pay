@@ -5,49 +5,28 @@ const SideBar = ({ isSidebarOpen, setSidebarOpen }) => {
   const sideBarMenuLis = [
     {
       className: "sideBarMenuLis",
-      href: "/dashboard",
-      text: "Dashboard"
+      href: "/registration",
+      text: "Registration",
+      key: 0
+    },
+    {
+      className: "sideBarMenuLis",
+      href: "/",
+      text: "Home - Send a Payment",
+      key: 1
     },
     {
       className: "sideBarMenuLis",
       href: "/payments",
-      text: "Payments"
+      text: "Payments",
+      key: 2
     },
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "#invoices",
-    //   text: "Invoices"
-    // },
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "/pay-notifs",
-    //   text: "Instant Pay Notifications"
-    // },
     {
       className: "sideBarMenuLis",
-      href: "/",
-      text: "Store Settings"
+      href: "/store-settings",
+      text: "Store Settings",
+      key: 3
     }
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "#accountSettings",
-    //   text: "Account Settings"
-    // },
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "#affiliateProgram",
-    //   text: "Affiliate Program"
-    // },
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "#cryptoToFiat",
-    //   text: "Crypto To Fiat"
-    // },
-    // {
-    //   className: "sideBarMenuLis",
-    //   href: "#coinSettings",
-    //   text: "Coin Settings"
-    // }
   ];
 
   return (

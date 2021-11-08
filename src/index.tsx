@@ -6,17 +6,20 @@ import App from "./App";
 import "antd/dist/antd.css";
 import "./global.scss";
 
-import Dashboard from "./pages/dashboard";
+import Home from "./pages/home";
 import StoreSettings from "./pages/store-settings";
 import PaymentsPage from "./pages/payments.page";
+import Registration from "./pages/registration";
 
 ReactDOM.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<StoreSettings />} />
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route index element={<Home />} />
+        <Route path="store-settings" element={<StoreSettings />} />
         <Route path="payments" element={<PaymentsPage />} />
+        <Route path="registration" element={<Registration />} />
+        {/* <Route path="login" element={<Login />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>,

@@ -4,6 +4,7 @@ import MerchantMainWallets from "../components/settings-cards/merchant-main-wall
 import BaseCurrency from "../components/settings-cards/Base-currency";
 import PayNotifs from "../components/settings-cards/pay-notifs";
 import { PageHeader } from "antd";
+import MerchantManagementCard from "../components/settings-cards/merchant-management";
 
 const StoreSettings = () => {
   return (
@@ -17,6 +18,7 @@ const StoreSettings = () => {
       <MerchantMainWallets />
       <BaseCurrency />
       <PayNotifs />
+      <MerchantManagementCard />
     </>
   );
 };

@@ -6,40 +6,39 @@ enum Status {
   Active = "Active",
   Inactive = "Inactive"
 }
+const dataSource = [
+  {
+    key: "1",
+    status: Status.Active,
+    created: "15-5-19"
+  },
+  {
+    key: "2",
+    status: Status.Inactive,
+    created: "21-4-21"
+  }
+];
+
+const columns = [
+  {
+    title: "Key",
+    dataIndex: "key"
+  },
+  {
+    title: "Status",
+    dataIndex: "status"
+  },
+  {
+    title: "Created",
+    dataIndex: "created"
+  },
+  {
+    title: "Action",
+    dataIndex: "action"
+  }
+];
 
 const ApiKeys = () => {
-  const dataSource = [
-    {
-      key: "1",
-      status: Status.Active,
-      created: "15-5-19"
-    },
-    {
-      key: "2",
-      status: Status.Inactive,
-      created: "21-4-21"
-    }
-  ];
-
-  const columns = [
-    {
-      title: "Key",
-      dataIndex: "key"
-    },
-    {
-      title: "Status",
-      dataIndex: "status"
-    },
-    {
-      title: "Created",
-      dataIndex: "created"
-    },
-    {
-      title: "Action",
-      dataIndex: "action"
-    }
-  ];
-
   return (
     <Card
       title="API Keys"
@@ -53,4 +52,3 @@ const ApiKeys = () => {
 };
 
 export default ApiKeys;
-
