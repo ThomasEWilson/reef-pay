@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import { DownOutlined } from "@ant-design/icons";
 import {
   PageHeader,
   Form,
@@ -63,38 +64,44 @@ const MerchantManagementCard = (): JSX.Element => {
 
   return (
     <>
-      <Form
-        name="basic"
-        labelCol={{ span: 8 }}
-        wrapperCol={{ span: 16 }}
-        initialValues={{ remember: true }}
-        onFinish={onFinish}
-        onFinishFailed={onFinishFailed}
-        autoComplete="off"
-        form={form}
-      >
-        <Form.Item
-          label="Name"
-          name="name"
-          rules={[{ required: true, message: "Please input your name!" }]}
+      <Card>
+        <Form
+          name="basic"
+          labelCol={{ span: 0 }}
+          wrapperCol={{ span: 0 }}
+          initialValues={{ remember: true }}
+          onFinish={onFinish}
+          onFinishFailed={onFinishFailed}
+          autoComplete="off"
+          form={form}
         >
-          <Input />
-        </Form.Item>
+          <Form.Item
+            label="Name"
+            name="name"
+            rules={[{ required: true, message: "Please input your name!" }]}
+          >
+            <Input />
+          </Form.Item>
 
-        <Form.Item
-          label="Memo"
-          name="memo"
-          rules={[{ required: true, message: "Please input your memo!" }]}
-        >
-          <Input.Password />
-        </Form.Item>
-      </Form>
-
+          <Form.Item
+            label="Memo"
+            name="memo"
+            rules={[{ required: true, message: "Please input your memo!" }]}
+          >
+            <Input.Password />
+          </Form.Item>
+        </Form>
+      </Card>
       <Card
         title="Merchants"
         headStyle={{ color: "purple", fontWeight: 600 }}
         bodyStyle={{}}
       >
+        {/* <Dropdown overlay={menu} trigger={['click']}>
+          <button>
+          Merchant <DownOutlined />
+          </button>
+        </Dropdown> */}
         <Table dataSource={dataSource} columns={columns} pagination={false} />
       </Card>
     </>
