@@ -9,8 +9,6 @@ import "./global.scss";
 import Home from "./pages/home";
 import StoreSettings from "./pages/store-settings";
 import PaymentsPage from "./pages/payments.page";
-import RegistrationPage from "./pages/registration-page";
-import LoginPage from "./pages/login-page";
 
 import Amplify, { Auth } from 'aws-amplify';
 
@@ -55,9 +53,6 @@ ReactDOM.render(
         <Route index element={<Home />} />
         <Route path="store-settings" element={<StoreSettings />} />
         <Route path="payments" element={<PaymentsPage />} />
-        <Route path="registration-page" element={<RegistrationPage />} />
-        <Route path="login-page" element={<LoginPage />} />
-        {/* <Route path="login" element={<Login />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>,
