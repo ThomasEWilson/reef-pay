@@ -33,7 +33,7 @@ Amplify.configure({
       // Note: if the secure flag is set to true, then the cookie transmission requires a secure protocol
       cookieStorage: {
       // REQUIRED - Cookie domain (only required if cookieStorage is provided)
-          domain: '.yourdomain.com',
+          domain: '.amplifyapp.com',
       // OPTIONAL - Cookie path
           path: '/',
       // OPTIONAL - Cookie expiration in days
