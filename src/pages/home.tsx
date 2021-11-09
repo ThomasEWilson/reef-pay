@@ -5,9 +5,6 @@ import PaymentCard from "../components/dashboard/payment-card";
 import Payments from "../components/payments/payments";
 import PayStats from "../components/dashboard/pay-stats";
 
-// import { Components } from "@reef-defi/react-lib";
-// import "@reef-defi/react-lib/dist/index.css";
-// const { Card, Button } = Components;
 const currencies = ["USD", "EUR", "GBP", "NZD", "BRL"];
 const menu = (
   <Menu>
