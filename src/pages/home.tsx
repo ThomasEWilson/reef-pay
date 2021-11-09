@@ -1,9 +1,23 @@
 import { PageHeader, Menu, Dropdown, Card, Table } from "antd";
 import React from "react";
-import PaymentCard from "../components/dashboard/payment-card";
+import { DownOutlined } from "@ant-design/icons";
 
 import Payments from "../components/payments/payments";
 import PayStats from "../components/dashboard/pay-stats";
+
+// import { Components } from "@reef-defi/react-lib";
+// import "@reef-defi/react-lib/dist/index.css";
+// const { Card, Button } = Components;
+const currencies = ["USD", "EUR", "GBP", "NZD", "BRL"];
+const menu = (
+  <Menu>
+    {currencies.map((currencyItem, indx) => (
+      <Menu.Item key={indx}>
+        <a>{currencyItem}</a>
+      </Menu.Item>
+    ))}
+  </Menu>
+);
 
 const currencies = ["USD", "EUR", "GBP", "NZD", "BRL"];
 const menu = (
