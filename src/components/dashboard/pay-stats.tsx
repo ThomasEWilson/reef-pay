@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Column } from "@ant-design/charts";
+import { Column, ColumnConfig } from "@ant-design/charts";
 
 const payStats: React.FC = () => {
-  var data = [
+  const data = [
     {
       type: "Jan",
       sales: 38
@@ -40,7 +40,7 @@ const payStats: React.FC = () => {
       sales: 38
     }
   ];
-  var config = {
+  const config: ColumnConfig = {
     data: data,
     xField: "type",
     yField: "sales",

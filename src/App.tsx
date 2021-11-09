@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "antd/dist/antd.css";
 import "./App.scss";
 import { Outlet } from "react-router-dom";
+import { withAuthenticator } from '@aws-amplify/ui-react';
 
 import SideBar from "./components/sidebar/sidebar";
 
@@ -22,4 +23,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
