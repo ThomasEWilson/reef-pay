@@ -4,6 +4,8 @@ import { Button } from "antd";
 import "./merchant-main-wallets.scss";
 
 const MerchantMainWallets = () => {
+  //if (noWalletsConnected)
+  //display (You must add a wallet to receive payments!)
   const dataSource = [
     {
       key: "1",
