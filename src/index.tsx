@@ -18,7 +18,7 @@ Amplify.configure({
   Auth: {
       
       // REQUIRED - Amazon Cognito Region
-      region: '/us-east-2',
+      region: 'us-east-2',
 
       // OPTIONAL - Amazon Cognito User Pool ID
       userPoolId: 'us-east-2_Aw3C1ge27',
