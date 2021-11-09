@@ -19,17 +19,6 @@ const menu = (
   </Menu>
 );
 
-const currencies = ["USD", "EUR", "GBP", "NZD", "BRL"];
-const menu = (
-  <Menu>
-    {currencies.map((currencyItem, indx) => (
-      <Menu.Item key={indx}>
-        <a>{currencyItem}</a>
-      </Menu.Item>
-    ))}
-  </Menu>
-);
-
 const Home = () => {
   return (
     <>
