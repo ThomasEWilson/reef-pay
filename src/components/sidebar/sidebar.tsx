@@ -32,7 +32,14 @@ const SideBar = ({ isSidebarOpen, setSidebarOpen }) => {
       href: "/login-page",
       text: "Login",
       key: 4
-    }
+    },
+    {
+      className: "sideBarMenuLis",
+      href: "/test-table",
+      text: "Test Table",
+      key: 5
+    },
+
   ];
 
   return (

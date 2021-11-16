@@ -9,6 +9,7 @@ import "./global.scss";
 import Home from "./pages/home";
 import StoreSettings from "./pages/store-settings";
 import PaymentsPage from "./pages/payments.page";
+// import TestTable from "./pages/test-table";
 
 import Amplify, { Auth } from 'aws-amplify';
 
@@ -53,6 +54,7 @@ ReactDOM.render(
         <Route index element={<Home />} />
         <Route path="store-settings" element={<StoreSettings />} />
         <Route path="payments" element={<PaymentsPage />} />
+        {/* <Route path="payments" element={<TestTable />} /> */}
       </Route>
     </Routes>
   </BrowserRouter>,
