@@ -5593,6 +5593,14 @@ acorn@^8.2.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.5.0.tgz#4512ccb99b3698c752591e9bb4472e38ad43cee2"
   integrity sha512-yXbYeFy+jUuYd3/CDcg2NkIYE991XYX/bje7LmjJigUciaeO1JR4XxXgCIV1/Zc/dRuFEyw1L0pbA+qynJkW5Q==
 
+acp-aws-amplify-serverless-plugin@1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/acp-aws-amplify-serverless-plugin/-/acp-aws-amplify-serverless-plugin-1.0.6.tgz#d9c022570088a4930162627dcb6564af9151d79e"
+  integrity sha512-3PYC2W00sPCW5PKYfqQ1YyPZoA3/4Kz86N5ir8LIpYYv1n3Q06kc8QY6zsQvlp7hU1ZppEp2czAdhXWc7msMpA==
+  dependencies:
+    chalk "^4.1.2"
+    json-stable-stringify-pretty "^1.2.0"
+
 address@1.1.2, address@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/address/-/address-1.1.2.tgz#bf1116c9c758c51b7a933d296b72c221ed9428b6"
@@ -6942,7 +6950,7 @@ chalk@^3.0.0:
     ansi-styles "^4.1.0"
     supports-color "^7.1.0"
 
-chalk@^4.0.0, chalk@^4.1.0:
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -11782,6 +11790,13 @@ json-schema@0.2.3:
   resolved "https://registry.yarnpkg.com/json-schema/-/json-schema-0.2.3.tgz#b480c892e59a2f05954ce727bd3f2a4e882f9e13"
   integrity sha1-tIDIkuWaLwWVTOcnvT8qTogvnhM=
 
+json-stable-stringify-pretty@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/json-stable-stringify-pretty/-/json-stable-stringify-pretty-1.2.0.tgz#ddaac3015d3b1c0a06d831466f6966132e3d1c0b"
+  integrity sha1-3arDAV07HAoG2DFGb2lmEy49HAs=
+  dependencies:
+    jsonify "~0.0.0"
+
 json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
@@ -11845,6 +11860,11 @@ jsonfile@^6.0.1:
     universalify "^2.0.0"
   optionalDependencies:
     graceful-fs "^4.1.6"
+
+jsonify@~0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
+  integrity sha1-LHS27kHZPKUbe1qu6PUDYx0lKnM=
 
 jsprim@^1.2.2:
   version "1.4.1"

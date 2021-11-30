@@ -7,31 +7,37 @@ const SideBar = ({ isSidebarOpen, setSidebarOpen }) => {
       className: "sideBarMenuLis",
       href: "/",
       text: "Dashboard",
-      key: 0
-    },
-    {
-      className: "sideBarMenuLis",
-      href: "/registration-page",
-      text: "Registration",
-      key: 1
+      key: "0"
     },
     {
       className: "sideBarMenuLis",
       href: "/payments",
       text: "Payments",
-      key: 2
+      key: "2"
     },
     {
       className: "sideBarMenuLis",
       href: "/store-settings",
       text: "Store Settings",
-      key: 3
+      key: "3"
     },
     {
       className: "sideBarMenuLis",
       href: "/login-page",
       text: "Login",
-      key: 4
+      key: "4"
+    },
+    {
+      className: "sideBarMenuLis",
+      href: "/test-page",
+      text: "Editable Tables",
+      key: "5"
+    },
+    {
+      className: "sideBarMenuLis",
+      href: "/payment-status",
+      text: "Payment Status",
+      key: "5"
     }
   ];
 

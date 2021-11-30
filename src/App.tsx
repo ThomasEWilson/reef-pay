@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "antd/dist/antd.css";
 import "./App.scss";
 import { Outlet } from "react-router-dom";
-import { withAuthenticator } from '@aws-amplify/ui-react';
+import { withAuthenticator } from "@aws-amplify/ui-react";
 
 import SideBar from "./components/sidebar/sidebar";
 
@@ -16,11 +16,11 @@ function App() {
         setSidebarOpen={setSidebarOpenParam}
       />
 
-      <div className="col flex-container">
+      <main className="col flex-container scrollable">
         <Outlet />
-      </div>
+      </main>
     </div>
   );
 }
 
-export default withAuthenticator(App);
+export default App;
