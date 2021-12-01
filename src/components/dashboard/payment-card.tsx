@@ -3,6 +3,7 @@ import React, { useMemo, useCallback, useEffect, useRef } from "react";
 import { useDataChanger } from "../../lib/useDataChanger";
 import BN from "bignumber.js";
 import usePriceFeed from "../../lib/usePriceFeed";
+import axios, { AxiosError } from 'axios';
 
 const { Option } = Select;
 
@@ -72,6 +73,43 @@ const PaymentCard = () => {
     }
   }, [reefPrice, dataRef, reefRef]);
 
+  const sendPostRequest = () => {
+    let body = JSON.stringify({
+      "originalPriceREEF": 10001,
+      "paymentId": "8",
+      "amountREEFRecieved": 0,
+      "orderId": "3",
+      "userId": "1",
+      "merchantId": "1",
+      "status": "Cancelled",
+      "created": "2021-11-08T18:46:51Z",
+      "usdReefExchangeRate": 0.001,
+      "originalPriceUSD": 10
+    });
+
+    // begin POST Request to AWS API Gateway to create Payment Request.
+    axios({
+      
+      
+      // Endpoint to send files
+      url: "https://bpnqxl35g7.execute-api.us-east-2.amazonaws.com/dev/payment",
+      method: "POST",  
+      headers: { 
+        'x-api-key': 'ZF4S9EFPYraJhCpRhgfMq3QqqhRabPgC7Fy2Fyrh', 
+        'Content-Type': 'application/json'
+      },
+      // Attaching the payment record to be created in dynamodb on aws
+      data: body,
+    })
+  
+      // Handle the response from backend here
+      .then((res) => {console.log(res) })
+  
+      // Catch errors if any
+      .catch((err) => {console.log(err) });
+}
+
+
   return (
     <Card>
       <Form
@@ -108,8 +146,8 @@ const PaymentCard = () => {
         </Form.Item>
 
         <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-          <Button type="primary" htmlType="submit" disabled>
-            Submit
+          <Button type="primary" onClick={ () => sendPostRequest() }>
+            Create Payment Request
           </Button>
         </Form.Item>
       </Form>

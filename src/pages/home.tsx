@@ -33,14 +33,17 @@ interface Data {
 }
 
 const Home = () => {
-  const [data, setResponseData] = useState();
-  useEffect(() => {
-    http
-      .get("/health")
-      .then((response) => setResponseData(response.data))
-      .catch((error) => console.log(error));
-  }, []);
+  const [data, setResponseData] = useState('');
+  // useEffect(() => {
+  //   http
+  //     .get("/health")
+  //     .then((response) => setResponseData(response.data))
+  //     .catch((error) => console.log(error));
+  // }, []);
 
+
+
+  
   return (
     <>
       <PageHeader
